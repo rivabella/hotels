@@ -9,6 +9,7 @@ if(isset($_POST) && !empty($_POST) && is_array($_POST)){
     $email = htmlspecialchars($_POST['email']);
 //put the value from $_post['question'] with and Wraps the string to a 50 number of characters and put it in $question
     $question = wordwrap($_POST['question'],50,"\r\n");
+    $ownemail = 'development@fletcher.nl';
 
 //    Additional headers
     $headers = "From: Fletcher Hotels website".strip_tags($ownemail)." \r\n";
