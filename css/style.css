@@ -1,0 +1,112 @@
+
+.form-area
+{
+    padding: 10px 40px 60px;
+    margin: 10px 0px 60px;
+    border: 1px solid rgba(0, 67, 125, 0.33);
+}
+.logo
+{
+    padding-left: 30%;
+    background-color: white;
+}
+
+.logo svg {
+    fill: #00437D;
+}
+
+input[type=email]{
+    -webkit-appearance: none;
+
+    width: 100%;
+    border: 1px solid #00437D;
+    margin: 0;
+
+    font-family: inherit;
+    font-size: 90%;
+
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* This is our style for the invalid fields */
+input:invalid{
+    border-color: #00437D;
+    background-color: #FDD;
+}
+
+input:focus:invalid {
+    outline: none;
+}
+
+/* This is the style of our error messages */
+.error {
+    width  : 100%;
+    padding: 0;
+
+    font-size: 80%;
+    color: white;
+    background-color: #00437D;
+    border-radius: 0 0 5px 5px;
+
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.error.active {
+    padding: 0.3em;
+}
+
+body {
+
+    padding-top: 20px;
+}
+
+.footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    border-top: 1px solid rgba(0, 67, 125, 0.33);
+}
+
+
+.navbar {
+
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#00437D),to(#eee));
+    background-image: -webkit-linear-gradient(top, #00437D 0%,#eee 100%);
+    background-image: -o-linear-gradient(top, #00437D 0%,#eee 100%);
+    background-image: linear-gradient(to bottom, #00437D 0%,#eee 100%);
+    border: 1px solid #e5e5e5;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .navbar-nav .nav-item {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+    }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    /* Remove the padding we set earlier */
+    .masthead,
+    .marketing,
+    .footer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+table {
+    border: 1px solid rgba(0, 67, 125, 0.33);
+}
+
+
