@@ -11,7 +11,7 @@ if(isset($_POST) && !empty($_POST) && is_array($_POST)){
     $question = wordwrap($_POST['question'],50,"\r\n");
 
 //    Additional headers
-    $headers = "From: Fletcher Hotels website \r\n";
+    $headers = "From: Fletcher Hotels website".strip_tags($ownemail)." \r\n";
     $headers .= "Reply-To: ". strip_tags($email) . "\r\n";
     $headers .= "CC: rivahoen79@hotmail.com\r\n";
 //    To send HTML mail, the Content-type header must be set
@@ -31,7 +31,7 @@ if(isset($_POST) && !empty($_POST) && is_array($_POST)){
     $contend .= "</table></body></html>";
 
 //    and mail it
-    $respons = mail('rivahoen79@hotmail.com', 'U heeft een nieuwe vraag ontvangen.',$contend, $headers);
+    $respons = mail($ownemail, 'U heeft een nieuwe vraag ontvangen.',$contend, $headers);
 
 //    check if it is send and show a succes message otherwise an error message
     if($respons === true){
