@@ -80,7 +80,7 @@ if(isset($_POST['places'])&&isset($_POST['search'])){
     $re .= '</thead>';
     $re .= '<tbody>';
 
-
+//make the body of the table with the values
     foreach ($keys as $key) {
         $key++;
         $value = $b['0']['cells'][$key];
